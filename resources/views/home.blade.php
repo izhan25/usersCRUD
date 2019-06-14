@@ -17,11 +17,11 @@
 
     <div class="row">
         <div class="col s12">
-            <table class="striped " style="margin-bottom: 50px">
+            <table class="striped responsive-table" style="margin-bottom: 50px">
                 <thead>
                     <tr>
                         <th>Sr.</th>
-                        <th>Display Name</th>
+                        <th>Name</th>
                         <th>Email</th>
                         <th>Action</th>
                     </tr>

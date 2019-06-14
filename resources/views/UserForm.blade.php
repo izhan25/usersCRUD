@@ -21,19 +21,19 @@
             <form action="/user/add" method="POST" class="col s12">
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="first_name" name="name" type="text" class="validate">
+                        <input id="first_name" name="name" type="text" class="validate" required>
                         <label for="first_name">Display Name</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input  id="email" name="email" type="email" class="validate">
+                        <input  id="email" name="email" type="email" class="validate" required>
                         <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="password" name="password" type="password" class="validate">
+                        <input id="password" name="password" type="password" class="validate" required>
                         <label for="password">Password</label>
                     </div>
                 </div>
@@ -75,6 +75,7 @@
                             value={{ $user->name }} 
                             type="text" 
                             class="validate"
+                            required
                         >
                         <label for="first_name">Display Name</label>
                     </div>
@@ -87,6 +88,7 @@
                             value={{ $user->email }} 
                             type="email" 
                             class="validate"
+                            required
                         >
                         <label for="email">Email</label>
                     </div>
@@ -99,6 +101,7 @@
                             value={{ $user->password }} 
                             type="text" 
                             class="validate"
+                            required
                         >
                         <label for="password">Password</label>
                     </div>
