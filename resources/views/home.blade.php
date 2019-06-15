@@ -7,7 +7,7 @@
             <h3>Users</h3>
         </div>
         <div class="col s8 m8 l8 xl8">
-            <a href="/user/form" class="btn btn-large blue waves-effect" style="margin-top: 25px; float: right;">
+            <a href="{{ route('userForm') }}" class="btn btn-large blue waves-effect" style="margin-top: 25px; float: right;">
                 Add User
             </a>
         </div>
@@ -35,14 +35,14 @@
                             <td>{{ $user->email }}</td>
                             <td>
                                 <a 
-                                    href="user/form/{{$user->id}}"
+                                    href="{{ route('userForm', ['id' => $user->id]) }}"
                                     class="btn blue waves-effect"
                                 >
                                     Edit
                                 </a>
 
                                 <a
-                                    href="user/delete/{{$user->id}}" 
+                                    href="{{ route('deleteUser', ['id' => $user->id]) }}" 
                                     class="waves-effect waves-red btn-flat"
                                 >
                                     Delete
