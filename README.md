@@ -7,7 +7,7 @@ This is a simple laravel application which demonstate a CRUD operation on USER
 ##### Step 1:
 
 1. Download composer.
-2. run composer install
+2. run "composer install" to download all the dependencies
 3. Download xampp
 4. clone this repo in htdocs of xampp's folder
 
